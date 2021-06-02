@@ -6,7 +6,7 @@ type ButtonProps = {
 
 const ControlButton = ({children, onClick}: ButtonProps)  => {
     return (
-    <button onClick={onClick} className="control-buttom">
+    <button onClick={onClick} className="control-button">
         
         {children}
 
