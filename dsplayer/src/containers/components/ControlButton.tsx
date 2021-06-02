@@ -1,10 +1,19 @@
-const ControlButton = () => {
-    return(
-        <div>
-            <h3>ControlButton</h3>
-        </div>
+type ButtonProps = {
+        children: any;
+        onClick?:() => void;
+};
+
+
+const ControlButton = ({children, onClick}: ButtonProps)  => {
+    return (
+    <button onClick={onClick} className="control-buttom">
+        
+        {children}
+
+    </button>
+       
+
     );
-    
 };
 
 export default ControlButton;
