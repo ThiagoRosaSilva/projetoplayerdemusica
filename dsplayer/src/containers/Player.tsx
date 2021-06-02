@@ -1,8 +1,17 @@
+import { headerInfo, tracks } from "../services/api";
+import PlayListHeader from "./components/PlayListHeader";
+import PlayListItem from "./components/PlayListItem";
+
+
 const Player = () => {
     return(
-        <div>
-            <h3>Player</h3>
-        </div>
+       <div className="player-container">
+           <PlayListHeader {... headerInfo}/>
+            {/*
+                tracks.map((track) =>(
+                    <PlayListItem {... track}/>
+                ))*/}
+       </div>
     );
     
 };
